@@ -40,7 +40,6 @@ wget http://www.datsi.fi.upm.es/~frosal/sources/shc-3.8.9b.tgz >/dev/null 2>&1
 tar zxvf shc-3.8.9b.tgz >/dev/null 2>&1
 rm -f shc-3.8.9b.tgz
 cd shc-3.8.9b >/dev/null 2>&1
-cp shc-3.8.9b.c shc.c >/dev/null 2>&1
 make install <<EOF
 y
 EOF
