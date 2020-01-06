@@ -41,14 +41,12 @@ tar zxvf shc-3.8.9b.tgz >/dev/null 2>&1
 rm -f shc-3.8.9b.tgz
 cd shc-3.8.9b >/dev/null 2>&1
 make install <<EOF
-y
 EOF
 cd - >/dev/null 2>&1
 rm -rf shc-3.8.9b >/dev/null 2>&1
 
 CFLAGs=-static shc -r -T -f $Name
 if [ ! -e "$Name.x.c" ]
-    then
 	    echo "Shell Encrypt Fail !"
 		exit 0;
 fi		
