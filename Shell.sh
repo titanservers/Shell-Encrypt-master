@@ -31,7 +31,7 @@ if [ ! -e "$Name" ]
 		exit 0;
 fi
 echo "Por favor espera .........."
-yum install -y gcc-c++ gcc automake autoconf libtool make >/dev/null 2>&1
+yyum install -y gcc-c++ gcc automake autoconf libtool make >/dev/null 2>&1
 if [ ! -e "/usr/local/man/man1/" ]
 then
 mkdir -p /usr/local/man/man1/ >/dev/null 2>&1
